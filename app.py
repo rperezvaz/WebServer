@@ -8,7 +8,8 @@ import aws_manager as web_server_aws_manager
 import threading
 import logging
 
-logging.basicConfig(format='[%(asctime)s] [%(levelname)8s] --- %(message)s', level=logging.WARNING)
+logging.basicConfig(format='[%(asctime)s] [%(levelname)8s] --- %(message)s', level=logging.WARNING,
+                    filename='/tmp/web_server.log')
 blocked_users_echo = []
 blocked_users_search = []
 
